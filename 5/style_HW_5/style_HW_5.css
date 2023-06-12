@@ -12,6 +12,7 @@ header{
     width: 86%;
     padding-top: 70px;
     padding-bottom: 70px;
+    margin: 0 auto;
     
 }
 .content_container{
@@ -22,7 +23,7 @@ header{
     align-items: center; /* Выравнивание элементов по вертикали */
 
 }
-.header_button button{
+.content_container button{
     display: inline-block;
     background-color: #147B43; 
     font-size: 24px; 
@@ -33,10 +34,13 @@ header{
     height: 66px;
     margin-right: 0;
 }
-.header_logo, .header_menu, .header_button{
-    width: 33.33%;
-    /* display: inline-block; */
+.header_logo, .header_menu{
+    width: 50%;
     
+}
+.header_logo {
+    display: inline-block;
+    text-align: left;
 }
 .header_logo img{
     display: inline-block;
@@ -59,7 +63,6 @@ a:visited{
     color: #1f8651;
 }
 
-
 /* Section Content */
 .content {
     width: 86%;
@@ -70,17 +73,16 @@ a:visited{
     align-items: center; /* Выравнивание элементов по вертикали */
 
 }
-.figure_content{
+.block1_content{
+    width: 70%;
+}
+.block1_content img{
     float: left;
     z-index: 3;
     position: absolute;
-    top: 300px;
+    top: 250px;
     left: 400px;
     /* width: 70%; */
-    min-width: 250px;
-    max-width: 250px;
-    max-height: 180px;
-    min-height: 180px;
 }
 .img_content{
     float: right;
@@ -91,18 +93,19 @@ a:visited{
     max-height: 486px;
     
 }
-.text_content h1{
-    z-index: 1;
-    position: absolute;
+.block1_content h1{
+    /* z-index: 1; */
+   /*  position: absolute; */
+   text-align: left;
     top: 404px;
     left: 250px;
-    float: left;
+    /* float: left; */
     width: 70%;
     color: #000000;
     font-size: 55px;
 }
-.button_content button{
-    position: absolute;
+.block1_content button{
+    /* position: absolute; */
     top: 700px;
     left: 250px;
     width: 174px;
@@ -113,21 +116,20 @@ a:visited{
     color: #147B43;
     border: none;
     border-radius: 30px;
-    width: 174px;
-    height: 66px;
 }
 
 /* FOOTER */
 
-.footer{
+footer{
     box-sizing: border-box;
-    width: 100%;
+   /*  width: 86%; */
     padding-top: 70px;
     padding-bottom: 70px;
     margin: 0 auto;
 }
 .footer_container{
     margin: 0 auto; 
+    width: 86%;
     /* text-align: center; */
     display: flex;
     justify-content: center; /* Выравнивание элементов по горизонтали */
@@ -136,18 +138,29 @@ a:visited{
 }
 .footer_services, .footer_company, .footer_contact{
     width: 33.33%;
-    float: left;
-    box-sizing: border-box;
     }
 .footer_container h3{
     font-size: 36px;
 }
-.footer_container a{
+.footer_container .footer_contact a, .footer_services a{
     font-size: 24px;
     text-align: left;
     text-decoration: none;
     color:#000000;
 }
+.footer_company h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+ }
+.footer_company a{
+   text-align: left; /* Выравнивание контента по левому краю */
+   color:#000000;
+   font-size: 24px;
+   text-decoration: none;
+ }
+
+ 
 .footer_container a:visited{
     color: #0b3c23;
 }
