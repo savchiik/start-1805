@@ -2,10 +2,11 @@
     box-sizing: border-box;
 }
 body{
-   width: 100%;
+   /* width: 100%; */
     background-color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
-    }
+    margin: 0;   
+}
 
    /* HEADER */
 header{
@@ -132,9 +133,9 @@ footer{
     width: 86%;
     /* text-align: center; */
     display: flex;
-    justify-content: center; /* Выравнивание элементов по горизонтали */
-    align-items: center; /* Выравнивание элементов по вертикали */
-
+    justify-content: space-around; /* Выравнивание элементов по горизонтали */
+    /* align-items: center; */ /* Выравнивание элементов по вертикали */
+    /* vertical-align: top; */
 }
 .footer_services, .footer_company, .footer_contact{
     width: 33.33%;
@@ -148,11 +149,6 @@ footer{
     text-decoration: none;
     color:#000000;
 }
-.footer_company h3{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
- }
 .footer_company a{
    text-align: left; /* Выравнивание контента по левому краю */
    color:#000000;
