@@ -143,6 +143,10 @@ footer{
 .footer_container h3{
     font-size: 36px;
 }
+.footer_container a{
+    display: block;
+    margin-bottom: 20px;
+}
 .footer_container .footer_contact a, .footer_services a{
     font-size: 24px;
     text-align: left;

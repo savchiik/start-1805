@@ -13,10 +13,11 @@ margin: 0;
 
 /* Style HEADER */
 .section_header{
-    width: 1730px;
+    width: 100%;
     height: 1120px;
     margin: 0 auto;
     background-image: url("../img_HW_7/background_img1.png");
+    background-size: 100%;
 }
 header{
     margin: 0 auto;
@@ -196,13 +197,19 @@ button.episodes{
     color: #FFFFFF;
     /* align-items: flex-start; */
     font-weight: bold;
+    width: 50%;
     /* margin-right: 10px; */
+}
+.popular_navigation .arrows{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 .popular_navigation i{
         font-size: 38px;
        /*  align-items: flex-end; */
         color:#FFFFFF;
-        margin-left: auto;
+        margin-left: 20px;
 }
 
 /* POPULAR CARDS */

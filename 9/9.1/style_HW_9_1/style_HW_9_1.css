@@ -1,0 +1,509 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Bebas Neue', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    margin: 0;
+}
+
+
+/* Style HEADER */
+.section_header{
+    width: 100%;
+    height: 768px;
+    /* margin: 0 auto; */
+    background-image: url("../img_HW_9.1/bg_header.png") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header{
+    margin: 0 auto;
+    display: flex;
+    padding-top: 38px;
+    width: 65%;
+    justify-content: center;
+}
+header a{
+    display: flex;
+    justify-content: center;
+}
+header h1{
+    padding-top: 310px;
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Bebas Neue', regular;
+    letter-spacing: 6px;
+    color: white;
+}
+header h4{
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+}
+header h5{
+    padding-top: 220px;
+    padding-bottom: 70px;
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.7px;
+}
+
+/*NAVIGATION*/
+
+.nav{
+    margin: 0 auto;
+    width: 66%;
+    display: flex;
+    padding-top: 25px;
+    }
+.nav_logo, .nav_menu{
+    width: 50%;
+    
+}
+.nav_logo {
+    display: inline-block;
+    text-align: left;
+}
+.nav_logo img{
+    display: inline-block;
+    width: 80px;
+    height: 18px;
+}
+.nav_menu{
+    text-align: right;
+}
+.nav_menu a{
+    display: inline-block;
+   
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 40px;
+}
+.nav_menu a:last-child{
+    margin-right: 0;
+}
+a:visited{
+    color: #48555B;
+}
+.nav_menu a:hover{
+    color: #00A4E5;
+}
+
+
+/* HORIZONTAL_LINE */
+
+.horizontal-line {
+    width: 100%;
+    margin-top: 24px;
+    height: 1px;
+    background-color: #E6E6E6; 
+  }
+
+  /* SECTION_BODY */
+
+  .section_body {
+    width: 66%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Выравнивание по центру */
+    padding-top: 120px;
+  }
+  
+  .our_story {
+    position: relative;
+  }
+  
+  .our_story h2 {
+    color: #48555B;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.306px;
+  }
+  
+  .our_story::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #00A4E5;
+  }
+  
+/* GRID_OUR_STORY */
+.grid_our_story {
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* Равномерное разделение на 4 колонки */
+    align-items: center;
+  }
+  .colored-word {
+    color: #16ACE8; 
+  }
+  .grid-item h3{
+    color: #48555B;
+    text-align: left;
+    font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.188px;
+  }
+  .grid-item h4{
+    color: #48555B;
+    text-align: left;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 23px; /* 176.923% */
+letter-spacing: 0.188px;
+  }
+  .grid-item,
+  .grid-item_img1,
+  .grid-item_img2,
+  .grid-item_img3 {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1; /* Занимает всю доступную ширину */
+  }
+  
+  .grid-item_img1,
+  .grid-item_img2,
+  .grid-item_img3 {
+    /* width: 50%; */ /* Занимают половину ширины */
+    position: relative;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px; /* 120.833% */
+    letter-spacing: 0.188px;
+    color: white;
+    padding: 30px;
+  }
+
+  /* OUR CAPABILITIES */
+
+  .our_capabilities {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    padding-top: 115px;
+    justify-content: space-between; /* Равномерное распределение между элементами */
+    align-items: center; /* Выравнивание элементов по вертикали */
+  }
+  
+  .text_our {
+    width: 40%;
+    text-align: left;
+    position: relative; 
+  }
+  
+  .text_our h2 {
+    color: #48555B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.306px;
+    margin: 0; /* Убираем отступы у h2 */
+  }
+
+  .text_our::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 15%;
+    height: 2px;
+    background-color: #00A4E5;
+  }
+  
+  .btn_text {
+    width: 60%;
+    /* text-align: right; */
+    display: flex; /* Добавляем flex-контейнер */
+    align-items: center; /* Выравнивание элементов по вертикали внутри flex-контейнера */
+  }
+  
+  .btn_text h4 {
+    color: #48555B;
+    font-size: 12px;
+    font-style: normal;
+    text-align: left;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    margin: 0;
+    flex-grow: 1; /* Растягиваем h4 на всю доступную ширину */
+  }
+  
+  .btn_all {
+    font-size: 13px;
+    width: 150px;
+    height: 40px;
+    background-color: #00A4E5;
+    color: white;
+    border: none;
+    font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.5px
+  }
+
+  /* 3icon_grid */
+
+  .icon3_grid {
+    display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 120px;
+  }
+
+  .grid_icon1, .grid_icon2, .grid_icon3{
+    border: 1px solid #E6E6E6;
+    padding: 22px;
+  }
+  .grid_icon1 h3, .grid_icon2 h3, .grid_icon3 h3{
+    color: #48555B;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.427px;
+  }
+  .grid_icon1 h4, .grid_icon2 h4, .grid_icon3 h4{
+    color: #48555B;
+    text-align: left;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 176.923% */
+  letter-spacing: 0.188px;
+  }
+
+
+  .get-in-touch_footer {
+    width: 100%;
+    height: 500px;
+    padding-top: 130px;
+    background-image: url("../img_HW_9.1/bg_footer.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .get-in-touch_content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Размещение элементов в столбец */
+    align-items: center; /* Выравнивание по центру */
+    width: 65%;
+    justify-content: center;
+  }
+  
+  .get-in-touch_content h3 {
+    color: #48555B;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; 
+    letter-spacing: 0.15px;
+    margin-bottom: 30px; /* Добавьте отступ снизу */
+  }
+  
+  .get-in-touch_content .btn_all {
+    font-size: 13px;
+    width: 150px;
+    height: 40px;
+    background-color: #00A4E5;
+    color: white;
+    border: none;
+    font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.5px;
+  }
+  .newsletter {
+      width: 100%;
+      margin: 0 auto;
+     display: flex;
+     justify-content: center;
+      height: 100px;
+      background-color: #171819;
+      padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+  .newsletter h4,
+  .newsletter input,
+  .newsletter button {
+    display: inline-block;
+    vertical-align: middle;
+   
+}
+  .newsletter h4 {
+    font-size: 22px;
+    margin: 0;
+    margin-right: 70px; 
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    color: #FFF;
+  }
+  .newsletter input{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    margin-right: -4px;
+  }
+  .newsletter input::placeholder {
+    color: #48555B;
+  }
+  .newsletter button{
+     width: 150px;
+     height: 40px;
+     border: none;
+     background-color: #00A4E5;
+     color: #FFF;
+     font-size: 13px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: 0.5px;
+  }
+
+
+   .footer {
+    width: 100%;
+    margin: 0 auto;
+    height: 240px;
+    background-color: #141A20;
+    /* padding-top: 42px; */
+    /* padding-bottom: 50px; */
+  }
+  .grid-container_footer {
+    display: grid;
+    width: 66%;
+    margin: 0 auto; /* Горизонтальное центрирование */
+    grid-gap: 60px;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+  }
+
+.grid_links{
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 32px;
+}
+
+.grid_company h4, .grid_links_1 h4, .grid_contact_us h4 {
+  color: #FFF;
+text-align: left;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.846px;
+}
+.grid_company, .grid_links, .grid_contact_us, .grid_social, .grid_links_1,
+.grid_links_2, .grid_links_3{
+  display: grid;
+}
+.grid_company img{
+  width: 101px;
+  height: 23px;
+}
+.grid_company h5{
+  font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; 
+letter-spacing: 0.85px;
+color:#FFF;
+}
+.grid_links_1 a, .grid_links_2 a, .grid_links_3 a {
+  color: #FFF;
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: 0.846px;
+text-decoration: none;
+}
+.grid_social {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* Создаем три колонки с автоматической шириной */
+  justify-content: start;
+  gap: 25px; /* Опционально: добавляем промежуток между иконками */
+}
+
+.grid_social i {
+  width: 12px;
+  height: 12px;
+  color:#FFF;
+}
+
+/* .grid_links_2,
+.grid_links_3,
+.grid_social {
+  grid-row: 2; /* Устанавливаем эти элементы на вторую строку */
+
+
+
+
+  /* copyright */
+
+  .copyright{
+    width: 100%;
+    height: 60px;
+    background-color: #171819;
+    display: flex;
+  align-items: center; /* Выравниваем элементы по вертикали по центру */
+  justify-content: center; 
+  }
+  .container_text{
+    width: 66%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    
+}
+.container_text i, .container_text h4{
+  color:#FFF;
+  font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.846px;
+}
+.container_text i{
+  margin-right: 10px;
+}
